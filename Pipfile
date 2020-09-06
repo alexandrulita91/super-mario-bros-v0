@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+tensorflow = "==2.2.0"
+keras = "==2.4.3"
+numpy = "==1.18.5"
+gym = "==0.17.2"
+gym-super-mario-bros = "==7.3.2"
+opencv-python = "==4.4.0.42"
+nes-py = "==8.1.6"
+
+[requires]
+python_version = "3.6"
