@@ -89,7 +89,6 @@ class FrameDownSample(gym.ObservationWrapper):
         :param env: (Gym Environment) the environment
         """
         gym.ObservationWrapper.__init__(self, env)
-        print("FrameDownSample")
         self.width = 84
         self.height = 84
         self.observation_space = spaces.Box(low=0, high=255, shape=(self.height, self.width, 1),
@@ -122,7 +121,6 @@ class LazyFrameStack(gym.Wrapper):
         :param n_frames: (int) the number of frames to stack
         """
         gym.Wrapper.__init__(self, env)
-        print("LazyFrameStack")
         self.n_frames = n_frames
         self.frames = deque([], maxlen=n_frames)
         shp = env.observation_space.shape
@@ -148,7 +146,6 @@ class LazyFrameStack(gym.Wrapper):
 class ScaledFloatFrame(gym.ObservationWrapper):
     def __init__(self, env):
         gym.ObservationWrapper.__init__(self, env)
-        print("ScaledFloatFrame")
         self.observation_space = spaces.Box(low=0, high=1.0, shape=env.observation_space.shape, dtype=np.float32)
 
     def observation(self, observation):
