@@ -24,3 +24,4 @@ You can run the script using the following command:
 ## Improvement ideas
 - improve the code quality
 - remove unnecessary comments
+- find better hyperparameters

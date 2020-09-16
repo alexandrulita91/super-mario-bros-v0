@@ -43,12 +43,12 @@ class Agent:
         self.memory = ReplyBuffer(memory_size=memory_size)
         self.batch_size = 32
         self.update_frequency = 4
-        self.tau = 10000
+        self.tau = 2000
         self.gamma = 0.99  # discount rate
         self.epsilon = 1  # exploration rate
         self.epsilon_min = 0.01
-        self.epsilon_decay = 0.99
-        self.learning_rate = 0.0005
+        self.epsilon_decay = 0.9999
+        self.learning_rate = 0.0003
         self.model = self._build_model()
         self.target_model = self._build_model()
         self.target_model.set_weights(self.model.get_weights())
