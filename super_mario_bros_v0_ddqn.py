@@ -9,6 +9,7 @@ from collections import deque
 import gym
 import gym_super_mario_bros.actions as actions
 import numpy as np
+import keras
 from keras.models import Sequential, clone_model
 from keras.layers import Conv2D, Dense, Flatten
 from keras.optimizers import Adam
@@ -198,6 +199,7 @@ if __name__ == "__main__":
         # Saves the online network weights
         if total_reward > max_reward:
             agent.save_weights("super_mario_bros_v0.h5")
+            keras.backend.clear_session()
 
     # Closes the environment
     env.close()
