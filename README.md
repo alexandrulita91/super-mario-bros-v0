@@ -1,5 +1,5 @@
 # Super-Mario-Bros-v0
-An Reinforcement Learning agent designed to learn and complete OpenAI Gym Super Mario Bros environment. These environments allow 3 attempts (lives) to make it through the 32 stages in the game. The environments only send reward-able game-play frames to agents.
+A Reinforcement Learning agent designed to learn and complete the OpenAI Gym Super Mario Bros environment. These environments allow 3 attempts (lives) to make it through the 32 stages in the game. The environments only send reward-able game-play frames to agents.
 
 ## OpenAI Gym
 OpenAI Gym is a toolkit for developing and comparing reinforcement learning algorithms. It supports teaching agents everything from walking to playing games like pong or pinball. Gym is an open source interface to reinforcement learning tasks.
