@@ -1,5 +1,5 @@
 """
-Super-Mario-Bros-v0 -- Double Deep Q-learning with Experience Replay
+Super-Mario-Bros-v0 -- Double Deep Q-learning
 """
 
 import os

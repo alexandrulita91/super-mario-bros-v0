@@ -5,7 +5,10 @@ A Reinforcement Learning agent designed to learn and complete the OpenAI Gym Sup
 OpenAI Gym is a toolkit for developing and comparing reinforcement learning algorithms. It supports teaching agents everything from walking to playing games like pong or pinball. Gym is an open source interface to reinforcement learning tasks.
 
 ## Reinforcement learning algorithms
-- Double Deep Q-learning with Experience Replay (off-policy, model-free)
+- Double Deep Q-learning (off-policy, model-free)
+
+## Demo video
+https://www.youtube.com/watch?v=O2QaSh4tNVw
 
 ## Requirements
 - [Python 3.6 or 3.7](https://www.python.org/downloads/release/python-360/)
@@ -21,7 +24,6 @@ You can install the required Python packages using the following command:
 You can run the script using the following command: 
 - `pipenv run python super_mario_bros_v0_ddqn.py`
 
-## Improvement ideas
-- improve the code quality
-- remove unnecessary comments
-- find better hyperparameters
+# Note for developers
+- you are responsible to update the default values of the hyperparameters
+- research will continue once I get better hardware
